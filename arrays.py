@@ -28,6 +28,15 @@ for i in range(a):
 
 print(arr)
 
+val = int(input("What is the value you want to check for: "))
+
+k = 0
+for e in arr:
+    if val == e:
+        print(k)
+        break
+    k += 1
+
 
 # write a code to find a factorial of a given number
 def factorial(n):
