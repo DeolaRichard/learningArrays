@@ -9,12 +9,24 @@ print("Sorted array: ", sorted_vals)
 print(vals.buffer_info())
 
 # making a copy of the previous array and then doubling each value
-newArr = array(vals.typecode, (a*a for a in vals))
+newArr = array(vals.typecode, (a * a for a in vals))
+
 # reversing the sequence of an array
 vals.reverse()
 for i in range(len(vals)):
     print(vals[i])
 print(newArr)
+
+# getting data inputs from user & storing the data in an array
+arr = array('i', [])
+
+a = int(input("Hey, how many data do you want to input?: "))
+
+for i in range(a):
+    x = int(input("Input the Next Value: "))
+    arr.append(x)
+
+print(arr)
 
 
 # write a code to find a factorial of a given number
@@ -33,4 +45,3 @@ def factorial(n):
 # Test the function with some examples
 print(factorial(10))
 print(factorial(3))
-
